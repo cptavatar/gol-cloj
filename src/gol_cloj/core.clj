@@ -11,8 +11,8 @@
   (contains? board point))
 
 (defn shift-by-relative [point rel-point]
-  "Given two maps in the form {:x intval :y intval}
-  add the x and y values to create a new map"
+  "Given two points in the form {:x intval :y intval}
+  add the x and y values to create a new point"
   {:x (+ (:x rel-point) (:x point))
    :y (+ (:y rel-point) (:y point))})
 
